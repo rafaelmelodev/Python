@@ -26,8 +26,9 @@
 
 ## IMAGE PROCESSING
 ### Argument Parser
+ - Inserting arguments using Prompt command line
 
-### OPENCV
+### OPENCV Basics
  - Loading and displying an image
  - Accessing individual pixels
  - Array slicing and cropping
