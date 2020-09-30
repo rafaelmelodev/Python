@@ -29,9 +29,10 @@
  - Inserting arguments using Prompt command line
 
 ### OPENCV Basics
- - Loading and displying an image
+ - Loading and displaying an image
  - Accessing individual pixels
  - Array slicing and cropping
  - Resizing images
  - Rotating an image
  - Smothing an image
+ - Drawing on an image
