@@ -17,6 +17,8 @@
 ### VS Code Extensions:
 - Python
 - C/C++
+- Github for VScode
+- Code runner
 
 ### Packages installation using 'pip':
 - pip install opencv-python
@@ -26,12 +28,4 @@
 
 ## IMAGE PROCESSING
 ### Argument Parser
- - Inserting arguments using Prompt command line
-
 ### OPENCV Basics
- - Loading and displying an image
- - Accessing individual pixels
- - Array slicing and cropping
- - Resizing images
- - Rotating an image
- - Smothing an image
