@@ -16,7 +16,10 @@ root.title("Ping Pong")
 root.resizable(0,0)
 root.wm_attributes("-topmost", -1)
 
+# The Canvas is a rectangular area intended for drawing pictures or other complex layouts.
+# You can place graphics, text, widgets or frames on a Canvas.
 canvas = Canvas(root, width=800, height=600, bd=0,highlightthickness=0)
+# This geometry manager organizes widgets in blocks before placing them in the parent widget.
 canvas.pack()
 
 root.update()
@@ -27,12 +30,18 @@ lost = False
 
 class Bola:
     def __init__(self, canvas, Barra, color):
+        # The word 'self' is used to represent the instance of a class. 
+        # By using the "self" keyword we access the attributes and methods of the class in python.
         self.canvas = canvas
         self.Barra = Barra
+        # Creates a circle or an ellipse at the given coordinates.
         self.id = canvas.create_oval(0, 0, 15, 15, fill=color)
+        # Move the circle to a desired position
         self.canvas.move(self.id, 245, 200)
 
+        # List
         starts_x = [-3, -2, -1, 1, 2, 3]
+        # Random shuffle the list
         random.shuffle(starts_x)
 
         self.x = starts_x[0]
