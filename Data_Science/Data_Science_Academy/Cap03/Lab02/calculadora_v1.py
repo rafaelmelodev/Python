@@ -31,3 +31,5 @@ else:
     
 # Show the solution to the user
 print("O resultado da operação", firstNumber, signal, secondNumber,"=", result)
+
+#End of calculator
