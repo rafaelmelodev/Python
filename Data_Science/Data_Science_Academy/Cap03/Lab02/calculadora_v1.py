@@ -22,7 +22,7 @@ elif operation == '2':
 elif operation == '3':
     result = firstNumber * secondNumber
     signal = '*'
-elif operation == 4:
+elif operation == '4':
     result = firstNumber / secondNumber
     signal = '/'
 else:

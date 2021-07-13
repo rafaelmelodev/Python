@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.7.6 on win32)" generated="20210708 22:41:25.616" rpa="false" schemaversion="2">
+<suite id="s1" name="Test Calculator" source="C:\Users\rafae\Desktop\Nova pasta\Python\Data_Science\Data_Science_Academy\Cap03\Lab02\Test_Calculator.robot">
+<test id="s1-t1" name="Addition Should Work">
+<kw name="Calculator Func" library="Calculator_function">
+<var>${result}</var>
+<arg>1</arg>
+<arg>1</arg>
+<arg>4</arg>
+<msg timestamp="20210708 22:41:25.660" level="INFO">${result} = 5.0</msg>
+<status status="PASS" starttime="20210708 22:41:25.659" endtime="20210708 22:41:25.660"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${Result}</arg>
+<arg>5.0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20210708 22:41:25.661" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20210708 22:41:25.660" endtime="20210708 22:41:25.661"/>
+</kw>
+<status status="PASS" starttime="20210708 22:41:25.659" endtime="20210708 22:41:25.661"/>
+</test>
+<test id="s1-t2" name="Subtraction Should Work">
+<kw name="Calculator Func" library="Calculator_function">
+<var>${result}</var>
+<arg>2</arg>
+<arg>1</arg>
+<arg>4</arg>
+<msg timestamp="20210708 22:41:25.663" level="INFO">${result} = -3.0</msg>
+<status status="PASS" starttime="20210708 22:41:25.663" endtime="20210708 22:41:25.663"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${Result}</arg>
+<arg>-3.0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20210708 22:41:25.664" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20210708 22:41:25.663" endtime="20210708 22:41:25.664"/>
+</kw>
+<status status="PASS" starttime="20210708 22:41:25.662" endtime="20210708 22:41:25.664"/>
+</test>
+<test id="s1-t3" name="Product Should Work">
+<kw name="Calculator Func" library="Calculator_function">
+<var>${result}</var>
+<arg>3</arg>
+<arg>2</arg>
+<arg>4</arg>
+<msg timestamp="20210708 22:41:25.666" level="INFO">${result} = 8.0</msg>
+<status status="PASS" starttime="20210708 22:41:25.666" endtime="20210708 22:41:25.666"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${Result}</arg>
+<arg>8.0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20210708 22:41:25.667" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20210708 22:41:25.667" endtime="20210708 22:41:25.667"/>
+</kw>
+<status status="PASS" starttime="20210708 22:41:25.665" endtime="20210708 22:41:25.667"/>
+</test>
+<test id="s1-t4" name="Division Should Work">
+<kw name="Calculator Func" library="Calculator_function">
+<var>${result}</var>
+<arg>4</arg>
+<arg>4</arg>
+<arg>2</arg>
+<msg timestamp="20210708 22:41:25.670" level="INFO">${result} = 2.0</msg>
+<status status="PASS" starttime="20210708 22:41:25.669" endtime="20210708 22:41:25.670"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${Result}</arg>
+<arg>2.0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20210708 22:41:25.670" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20210708 22:41:25.670" endtime="20210708 22:41:25.670"/>
+</kw>
+<status status="PASS" starttime="20210708 22:41:25.669" endtime="20210708 22:41:25.671"/>
+</test>
+<test id="s1-t5" name="Invalid Operation Inserted Should Work">
+<kw name="Calculator Func" library="Calculator_function">
+<var>${result}</var>
+<arg>5</arg>
+<arg>4</arg>
+<arg>2</arg>
+<msg timestamp="20210708 22:41:25.673" level="INFO">Operação inválida!</msg>
+<msg timestamp="20210708 22:41:25.674" level="INFO">${result} = 0.0</msg>
+<status status="PASS" starttime="20210708 22:41:25.673" endtime="20210708 22:41:25.674"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${Result}</arg>
+<arg>0.0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20210708 22:41:25.674" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20210708 22:41:25.674" endtime="20210708 22:41:25.674"/>
+</kw>
+<status status="PASS" starttime="20210708 22:41:25.672" endtime="20210708 22:41:25.675"/>
+</test>
+<doc>These tests have the purpose to test the Calculator_function.py program
+They exercise all the calculator operations described into the program.</doc>
+<status status="PASS" starttime="20210708 22:41:25.632" endtime="20210708 22:41:25.676"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Test Calculator">Test Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
