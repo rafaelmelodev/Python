@@ -32,7 +32,7 @@ while (i < int(n)):
         if dig >= 3:
             if NumberCharac == 10:
                 if alfaNumeric:
-                    if len(set(UID)) == len(UID):
+                    if len(set(UID)) == len(UID): # No repeated characters
                         Verification = "Valid"
     
     i += 1
